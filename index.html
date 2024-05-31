@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html>
- 
-	<head>
-<title> tasnim's profile </title>
-<meta name="description" content=" this is the profile of Tasnim">
-<meta charset="UTF-8">
- 
-		<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<head>
+    <title>Tasnim's Profile</title>
+    <meta name="description" content="This is the profile of Tasnim">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS for demonstration; you can move this to style.css */
+        body {
+            font-family: 'Amita', cursive;
+            background-color: pink; /* Pink background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .card-white {
+            background-color: white; /* White background for the cards */
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px; /* Fixed width for card consistency */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+            text-align: center; /* Center text inside the cards */
+        }
+        .card-white img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        .center-link {
+            text-align: center; /* Center the link horizontally */
+        }
+        .center-link a {
+            display: inline-block; /* Ensure the link is treated as a block for margin auto to work */
+        }
+    </style>
 </head>
- 
-	<body>
-<h1> Hello , i'm Tasnim</h1>
-<img src="images/tasnim.jpg" alt="Tasnim">
-<p>	
-			Hi , my nickname is BATAS 😇
-</p>
-<a href="http://lewagon.com" target="_blank">Discover Le Wagon</a>
-<h2>Hobbies :</h2>
-<p>
-			drawing 🖌️+ eating 🥣+ reading📖🥰
-</p>
-<h2>MY FUTURE JOB :</h2>
-<p>
-			Anesthesist💉🩺
-</p>
- 
- 
-	</body>
- 
- 
+<body>
+    <div class="container">
+        <div class="card-white">
+            <h1>Hello, I'm Tasnim</h1>
+            <img src="images/tasnim.png" alt="Tasnim">
+        </div>
+        <div class="card-white">
+            <p>Hi, my nickname is BATAS 😇</p>
+        </div>
+        <div class="card-white center-link">
+            <a href="http://lewagon.com" target="_blank">Discover Le Wagon</a>
+        </div>
+        <div class="card-white">
+            <h2>Hobbies:</h2>
+            <p>drawing 🖌️ + eating 🥣 + reading 📖🥰</p>
+        </div>
+        <div class="card-white">
+            <h2>My Future Job:</h2>
+            <p>Anesthesiologist 💉🩺</p>
+        </div>
+    </div>
+</body>
 </html>
